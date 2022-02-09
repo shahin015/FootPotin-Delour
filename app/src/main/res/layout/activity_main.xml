@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="6dp"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/armata"
+            android:text="Find your recipie"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/armata"
+            android:text="What do you want to eat ? "
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:layout_marginLeft="3dp"
+            android:textStyle="normal">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/logo"
+        app:civ_border_color="@color/red"
+        app:civ_border_width="2dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/l_layout"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+            <HorizontalScrollView
+                android:id="@+id/catagorie_scroll_View"
+                android:layout_width="wrap_content"
+                android:scrollbarThumbHorizontal="@drawable/scrollbar"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+
+                        android:layout_width="180dp"
+                        android:background="@drawable/breakfast"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:id="@+id/break1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/armata"
+                            android:text="Breakfast"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/stext1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/break1"
+                            android:layout_marginLeft="9dp"
+                            android:fontFamily="@font/armata"
+                            android:text="Breakfast"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:textStyle="normal">
+
+                        </TextView>
+                        <LinearLayout
+                            android:id="@+id/break_llay"
+                            android:layout_below="@+id/stext1"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                app:cardElevation="5dp"
+                                app:cardCornerRadius="5dp"
+                                android:layout_width="55dp"
+                                android:layout_height="15dp"
+                                android:backgroundTint="@color/white"
+                                >
+                                <TextView
+                                    android:layout_gravity="center"
+                                    android:text="make now"
+                                    android:textSize="8dp"
+                                    android:textColor="#4CAF50"
+                                    android:fontFamily="@font/autour_one"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+
+                        android:layout_width="180dp"
+                        android:background="@drawable/lunch1"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:id="@+id/break2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/armata"
+                            android:text="Lunch"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/stext2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/break2"
+                            android:layout_marginLeft="9dp"
+                            android:fontFamily="@font/armata"
+                            android:text="Lunch"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:textStyle="normal">
+
+                        </TextView>
+                        <LinearLayout
+                            android:id="@+id/lunch_llay"
+
+                            android:layout_below="@+id/stext2"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginRight="28dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="5dp"
+                                android:layout_width="55dp"
+                                android:layout_height="15dp"
+                                android:backgroundTint="@color/white"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/autour_one"
+                                    android:padding="2dp"
+                                    android:text="make now"
+                                    android:textColor="#FF0404"
+                                    android:textSize="8dp">
+
+                                </TextView>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+
+                        android:layout_width="180dp"
+                        android:background="@drawable/dinner"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:id="@+id/break3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/armata"
+                            android:text="Dinner"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/stext3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/break3"
+                            android:layout_marginLeft="9dp"
+                            android:fontFamily="@font/armata"
+                            android:text="Dinner"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:textStyle="normal">
+
+                        </TextView>
+                        <LinearLayout
+                            android:id="@+id/dinner_llay"
+
+                            android:layout_below="@+id/stext3"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="5dp"
+                                android:layout_width="55dp"
+                                android:layout_height="15dp"
+                                android:backgroundTint="@color/white"
+                                >
+                                <TextView
+                                    android:padding="2dp"
+                                    android:layout_gravity="center"
+                                    android:text="make now"
+                                    android:textSize="8dp"
+                                    android:textColor="#000000"
+                                    android:fontFamily="@font/autour_one"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="180dp"
+                        android:background="@drawable/desert"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:id="@+id/break4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/armata"
+                            android:text="Desert"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/stext4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/break4"
+                            android:layout_marginLeft="9dp"
+                            android:fontFamily="@font/armata"
+                            android:text="Desert"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:textStyle="normal">
+
+                        </TextView>
+                        <LinearLayout
+                            android:id="@+id/desert_llay"
+                            android:background="#FFE01A"
+                            android:layout_below="@+id/stext4"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="5dp"
+                                android:layout_width="55dp"
+                                android:layout_height="15dp"
+                                android:backgroundTint="@color/white"
+                                >
+                                <TextView
+                                    android:padding="2dp"
+                                    android:layout_gravity="center"
+                                    android:text="make now"
+                                    android:textSize="8dp"
+                                    android:textColor="#F44336"
+                                    android:fontFamily="@font/autour_one"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/t_promo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/flame" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/armata"
+                android:text="Today,s Promo"
+                android:textColor="@color/black"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/recycle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/v_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/flame" />
+
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="false"
+                android:fontFamily="@font/armata"
+                android:text="Letest Update's"
+                android:textColor="@color/black"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tt"
+
+                android:fontFamily="@font/armata"
+                android:text="daily Special"
+                android:textColor="@color/black"
+                android:textSize="9dp">
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
